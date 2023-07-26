@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code with harry website clone</title>
+    <title>CodewithRB website clone</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="icon" type="image/x-icon" href="/img/maths.jpg">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 </head>
 
 <body>
     <header>
-        <div class="brand">
-            <div class="logo"></div>CodeWithRB
+        <div class="nav_left">
+            <div class="brand">
+                <div class="logo"></div><a href="/index.html">CodeWithRB</a>
+            </div>
         </div>
         <div class="navbar">
             <ul>
-                <li class="underline">Home</li>
-                <li class="underline">Courses</li>
-                <li class="underline">Tutorial</li>
-                <li class="underline">Blog</li>
-                <li class="underline">Notes</li>
-                <li class="underline">Contact</li>
-                <li class="underline">My Gear</li>
-                <li class="underline">Work With Us</li>
+                <li class="underline"><a href="/">Home</a></li>
+                <li class="underline"><a href="/videos.html"> Courses</a></li>
+                <li class="underline"><a href="/Tutorials.html"> Tutorial</a></li>
+                <li class="underline"><a href="blog.html"> Blog</a></li>
+                <li class="underline"><a href="Notes.html"> Notes</a></li>
+                <li class="underline"><a href="contact.html"> Contact</a></li>
+                <li class="underline"><a href="myGear.html"> My Gear</a></li>
+                <li class="underline"><a href="work_with_us.html"> Work With Us</a></li>
                 <li class="btns"><button class="btn">Login</button><button class="btn">SignUp</button></li>
             </ul>
 
@@ -51,10 +55,17 @@
             <i class="fas fa-search"></i>
         </div>
     </div>
+
+    
+
     <div class="main_first">
         <div class="main_left">
+
             <h1>Welcome to <span>CodeWithRB</span></h1>
-            <h4>Learn <span>Web Development</span></h4>
+            <h4>Learn 
+                <!-- <span>Web Development</span> -->
+                <span id="element"></span>
+            </h4>
             <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for
                 you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in
                 short time which took me ages to learn.</p>
@@ -129,7 +140,9 @@
     <footer>
         <div class="foot_left">
             <div class="logo"></div>
-            <div class="brand">CodeWithRB</div>
+            <div class="brand">
+                <a href="/index.html">CodeWithRB</a>
+            </div>
             <div class="copyrights">Copyright &copy 2022 CodeWithRB.com</div>
         </div>
         <div class="foot_right social">
@@ -141,6 +154,14 @@
             <span> <a href="http://"><i class="fab fa-github"></i></a></span>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Development', 'Python Development', 'UI UX Designing','Maching Learning'],
+            typeSpeed: 50, loop: true, loopCount: Infinity,
+        });
+    </script>
 </body>
 
 </html>
